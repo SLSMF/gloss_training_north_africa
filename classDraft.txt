@@ -1,0 +1,32 @@
+Workshop, theorical part: 
+
+1h
+
+*The whole process of reprocessing has three mail blocks: SELENE, buddy-check and SELENEVIS. 
+	*SELENE is a process that calls info from "/datafiles", the format is given in Workshop notes. We carry out qc() and qc2(). they read from a json in /configuration/stations.json and harmonics from /configuration/harmonics
+		-qc
+			-flatline (stuck value) test
+			-range test (max-min)
+			-spike detection
+			
+		-qc2(): advanced spike detection. when gradient surpasses a max2.
+	We save results "[code2]_original_sampling_flags.out" in "/outputs". 
+
+	*buddy-check reads from and produces results in "/outputs".  
+		*compare to hourly surge of buddy station (nearby station of less than 0.1degree, we enlarge distance to 0.3, 0.5...) 
+		*compare to monthly total sea level of buddy station
+		also:
+			*compare to altimetry. reads altimetry from /altimeter_data.
+			*compare to 
+			*check for attenuated data
+			*check for drifts
+		*changes are made on hourly data, and propagated to original sampling (can be 1min, 5min, etc. )
+		*To produce hourly tide and surge, we call utils/utide_construct, which reads harmonics in /configuration/harmonics. 
+
+		*produces [code2]_original_sampling_buddy.out, [code2]_hourly_slev_buddy.out, [code2]_hourly_surge_buddy.out, [code2]_hourly_tide_buddy.out
+python selenevis.py --> visualizes the product series above. Visualizes [code2]_original_sampling_buddy.out, [code2]_hourly_slev_buddy.out, [code2]_hourly_surge_buddy.out, [code2]_hourly_tide_buddy.out. 
+
+
+PLEASE FELL FREE TO ADAPT CODE TO YOUR DATA. 
+
+To try with your own data, you would need to introduce information in code_guide.csv, come up with a code2. You won't have harmonics, but code works the same. 

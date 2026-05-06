@@ -18,8 +18,8 @@ def plotsubplots(dfs, station,folder_vis):
         plt.ylabel('Sea level (mm)')
         plt.margins(df[7], df[8])
     plt.subplots_adjust(hspace=0.4)
-    plt.show()
     plt.savefig(folder_vis+"SELENEQC_graphics_Station_" + station + ".png")
+    #plt.show()
 def plot(dfs, text):
     plt.figure(1,figsize=(14, 4))
     plt.suptitle('Plot: ' + text)

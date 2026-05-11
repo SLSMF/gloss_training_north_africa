@@ -133,5 +133,32 @@
         "seriesseparator": " ",
         "seriesvaluecolumn": 3,
         "data_mode": "R"
+    },
+    "adak": {
+        "foremanharmfile": "configuration/harmonics/adak_harm.pkl",
+        "latitude": 51.863,
+        "longitude": -176.632,
+        "minint": 60,
+        "maxlevel": 18406,
+        "maxsurge": 13497,
+        "minlevel": -8588,
+        "minsurge": -13497,
+        "max": 2300,
+        "qc_level_nsigma": 3,
+        "qc_level_splinedegree": 2,
+        "qc_level_winsize": 40,
+        "qc_stucklimit": 10,
+        "qc_surge_nsigma": 5,
+        "qc_surge_splinedegree": 3,
+        "qc_surge_winsize": 80,
+        "shortname": "ADAK",
+        "name": "adak",
+        "seriesdatecolumns": "1,2",
+        "seriesdateformat": "%Y-%m-%d%H:%M:%S",
+        "seriesfile": "datafiles/adak.data",
+        "seriesqccolumn": 4,
+        "seriesseparator": " ",
+        "seriesvaluecolumn": 3,
+        "data_mode": "R"
     }
 }

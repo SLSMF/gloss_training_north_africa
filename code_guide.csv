@@ -3,5 +3,5 @@ IR_TS_TG_BilbaoTG.nc;IR;IBI;BilbaoTG;2059388;-3.05;43.357;one_sampling
 GL_TS_TG_DieppeTG_60minute.nc;GL;IBI;DieppeTG;6024460;1.085;49.93;max_int
 XX_XX_XX_MYSTATION.nc;XX;XX;MYSTATION;1000000;20;20;one_sampling
 XX_XX_XX_MYSTATION-2.nc;XX;XX;MYSTATION-2;1000001;-20;-20;one_sampling
-XX_XX_XX_abas.nc;XX;XX;abas-2;abas;144.29;44.20;one_sampling
-XX_XX_XX_adak.nc;XX;XX;{'adak'};{'adak'};-176.632;51.863;one_sampling
+XX_XX_XX_adak.nc;XX;XX;adak;adak;-176.632;51.863;one_sampling
+XX_XX_XX_abas.nc;XX;XX;abas;abas;144.29;44.02;one_sampling

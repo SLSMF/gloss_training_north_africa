@@ -160,5 +160,32 @@
         "seriesseparator": " ",
         "seriesvaluecolumn": 3,
         "data_mode": "R"
+    },
+    "meli": {
+        "foremanharmfile": "configuration/harmonics/meli_harm.pkl",
+        "latitude": 35.29061,
+        "longitude": -2.92853,
+        "minint": 60,
+        "maxlevel": 18406,
+        "maxsurge": 13497,
+        "minlevel": -8588,
+        "minsurge": -13497,
+        "max2": 2300,
+        "qc_level_nsigma": 3,
+        "qc_level_splinedegree": 2,
+        "qc_level_winsize": 40,
+        "qc_stucklimit": 10,
+        "qc_surge_nsigma": 5,
+        "qc_surge_splinedegree": 3,
+        "qc_surge_winsize": 80,
+        "shortname": "MELI",
+        "name": "meli",
+        "seriesdatecolumns": "1,2",
+        "seriesdateformat": "%Y-%m-%d%H:%M:%S",
+        "seriesfile": "datafiles/meli.data",
+        "seriesqccolumn": 4,
+        "seriesseparator": " ",
+        "seriesvaluecolumn": 3,
+        "data_mode": "R"
     }
 }
